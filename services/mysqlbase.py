@@ -42,11 +42,11 @@ class MySQLBase(object):
             self.error = f"Error: {e}"
             self.status = 0
 
-    def execute_command(self, filter, command):
+    def execute_command(self, command, filter=""):
         """Funcion para ejecutar las consultas sql de las propiedades
 
         Args:
-            filter (tuple): es una tupla con los filtros de city, year and status
+            filter (tuple): es una tupla con los filtros de city, year and status, por defecto es str vacio
             command (str): la constante SQL_COMMANDS es un diccionario con las consultas sql,
                            command es la llave del diccionario para acceder a la consulta.
 

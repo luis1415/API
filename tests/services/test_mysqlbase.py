@@ -15,7 +15,7 @@ class TestMySQLBase(unittest.TestCase):
         """Funcion para testear que se ejecute un comando SQL y devuelva un resultado
         """
         db_connect = MySQLBase()
-        result = db_connect.execute_command("", "unittest")
+        result = db_connect.execute_command("unittest")
         self.assertEqual(len(result), 1)
 
 
