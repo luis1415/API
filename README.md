@@ -1,5 +1,7 @@
 # API
 
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
 Se usa fastapi y docker.
 
 - Para correr la API con docker-compose:
