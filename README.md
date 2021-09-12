@@ -44,6 +44,12 @@ http://localhost:8000/docs
 http://localhost:8000/redoc
 ```
 
+- Para correr el microservicio gRPC:
+
+```
+python grpc_server.py
+```
+
 # Diagrama Entidad relación
 
 Para los likes se tiene relación muchos a muchos, entonces sale un tabla intermedia, con los likes por propiedad, en la tabla likes se almacena la cantidad de likes de cada propiedad por eso la relacion es uno a uno entre likes y propiedades.
