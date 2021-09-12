@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+message PropertyRequest {
+    int32 property_id = 1;
+}
+
+message PropertyReply {
+    string address = 1;
+    string city = 2;
+    float price = 3;
+    string description = 4;
+}
+
+service Property {
+    rpc Properties(PropertyRequest) returns (PropertyReply) {}
+}

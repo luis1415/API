@@ -11,5 +11,8 @@ class MySQLConfig:
         "SELECT address, city, name, price, description  FROM property as p LEFT JOIN status_history as sh on p.id = sh.id LEFT JOIN status as s on s.id = sh.id WHERE s.name IN ('pre_venta', 'en_venta', 'vendido') AND (city = '{0}' OR year = {1} OR name = '{2}') ;",
         "filtered_by_price":
         "SELECT address, city, name, price, description  FROM property as p LEFT JOIN status_history as sh on p.id = sh.id LEFT JOIN status as s on s.id = sh.id WHERE s.name IN ('pre_venta', 'en_venta', 'vendido') AND p.price BETWEEN {0} AND {1} ;",
-        "unittest": "SELECT * FROM property LIMIT 1;"
+        "unittest":
+        "SELECT * FROM property LIMIT 1;",
+        "grpc_property_by_id":
+        "SELECT address, city, price, description FROM property WHERE id = {0};"
     }
