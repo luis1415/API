@@ -1,6 +1,6 @@
 # API
 
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/luis1415/api/actions/workflows/python-app.yml/badge.svg)
 
 Se usa fastapi y docker.
 
