@@ -1,0 +1,4 @@
+fastapi==0.68.1
+uvicorn==0.15.0
+PyMySQL==1.0.2
+grpcio-tools==1.40.0

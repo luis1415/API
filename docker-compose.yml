@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  properties_app:
+    build:
+      context: .
+      dockerfile: property_app.dockerfile
+    ports:
+      - "8000:8000"
